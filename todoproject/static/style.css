@@ -1,0 +1,17 @@
+.banner{
+     background-color:DarkOliveGreen;
+     width:100%;
+     height:200px;
+     margin-bottom:50px;
+
+
+     }
+
+
+.banner-text{
+top:130px;
+left:700px;
+position:absolute;
+transform:transform;
+
+}
