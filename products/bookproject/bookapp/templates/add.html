@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter your Book name"><br>
+    <input type="text" name="author" placeholder="Enter the author name"><br>
+    <input type="text" name="desc" placeholder="Enter the Book description"><br>
+    <input type="text" name="year" placeholder="Enter the Book publishing year"><br>
+    <input type="file" name="img" ><br>
+    <input type="submit">
+</form>
+{% endblock %}
