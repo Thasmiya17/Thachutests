@@ -1,0 +1,163 @@
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+     <!-- Site Metas -->
+    <title>SmartEDU - Education Responsive HTML5 Template</title>
+    <style>
+        form{
+        justify-content:left;
+        align-items:center;
+        margin:1;
+        border:1.5px solid black;
+        line-height:2.5;
+       display:inline-block;
+
+        font-size:18px;
+        font-family:sans-serif;
+        }
+
+        </style>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="{% static 'css/versions.css' %}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="{% static 'js/modernizer.js' %}"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version">
+<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html">
+					<img src="{% static 'images/logo.png' %}" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+ <div id="carouselExampleControls" class="carousel slide bs-slider box-slider" data-ride="carousel" data-pause="hover" data-interval="false" >
+<div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+				<div id="home" class="first-section" style="background-image:url({% static 'images/slider-03.jpg' %})">
+                   <div class="dtab">
+                      <div class="container">
+                          <div class="row">
+                          <div class="col-md-12 col-sm-12 text-right">
+                    <div class="big-tagline">
+                    <h2><strong>EduSquare </strong> education College</h2>
+                        <center>
+                    <p class="lead">For entering your profile you need to Login your account... </p></center></div>
+                 </div>
+                  </div>
+                    </div>
+                      </div></div>
+                </div>
+        </div>
+    </div>
+
+
+
+<div align="center">
+ <footer class="footer">
+<!--    <div class="container">-->
+<!--            <div class="row">-->
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+<!--                            <div align="center">-->
+                            <table align="center" cellpadding="10">
+
+<form action="login" method="post" >
+<!--<div align="center">-->
+    {%csrf_token %}
+<h1 style="color:red"><i>
+    Login!!!
+</i></h1>
+
+    <tr>
+    <td>Username: </td><td><input type="username" name="username:" placeholder="Enter your Username"></td><br>
+    </tr>
+    <tr>
+    <td>Password: </td><td><input type="password" name="password:" placeholder="Enter your password"></td><br>
+        </tr>
+    <tr>
+    <td><a href="form"><button type="button">Login</button></a></td>
+    <td><a href="login"><button type="button">Submit</button></a></td><br></tr>
+<!--    <input type="submit">--><tr><td><center>
+    <a href="register" style="color:blue">Register</a></center></td><br></tr>
+</form></table>
+</div>
+                        </div>
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+
+ </footer>
+</div>
+
+<div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">EduSquare</a> Design By : <a href="https://html.design/">html design</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'js/all.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'js/custom.js' %}"></script>
+	<script src="{% static 'js/timeline.min.js' %}"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
+
+
+</body>
+</html>
